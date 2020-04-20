@@ -1,0 +1,73 @@
+% Umlaute in der Datei erlauben, auf deutsch umstellen
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+% Mathesymbole und Ähnliches
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{stmaryrd}
+
+% Abbildungen
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc}
+
+% Reelle, Natürliche, Ganze, Rationale Zahlen
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+
+% Fraktur für Strukturen
+\newcommand{\A}{\ensuremath{\mathfrak A}}
+\newcommand{\B}{\ensuremath{\mathfrak B}}
+\newcommand{\C}{\ensuremath{\mathfrak C}}
+\newcommand{\I}{\ensuremath{\mathfrak I}}
+\newcommand{\K}{\ensuremath{\mathfrak K}} % Klasse von Strukturen
+\renewcommand{\H}{\ensuremath{\mathfrak H}} % Herbrand Struktur oder Hamiltonian
+
+% Makros für logische Operatoren
+\newcommand{\xor}{\ensuremath{\oplus}} %exklusives oder
+\newcommand{\impl}{\ensuremath{\rightarrow}} %logische Implikation
+\newcommand{\limpl}{\ensuremath{\Rightarrow}} % Implikation L->R
+\newcommand{\rimpl}{\ensuremath{\Leftarrow}} % Implikation R->L
+\newcommand{\lequiv}{\ensuremath{\Leftrightarrow}} % Equivalenzaussage
+\newcommand{\eset}{\ensuremath{\varnothing}} % leere Menge
+
+% Meistens ist \varphi schöner als \phi, genauso bei \theta
+\renewcommand{\phi}{\varphi}
+\renewcommand{\theta}{\vartheta}
+
+% Aufzählungen anpassen (alternativ: \arabic, \alph)
+\renewcommand{\labelenumi}{(\roman{enumi})}
+
+% math ops
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\newcommand{\set}[1]{\ensuremath{\{#1\}}}
+\newcommand{\Mod}[1]{\ensuremath{\text{Mod}(#1)}} % Modellklasse
+\newcommand{\Aut}[1]{\ensuremath{\text{Aut}(#1)}} % Automorphismusklasse
+\newcommand{\iso}{\ensuremath{\cong}} % isomorphic
+\newcommand{\qr}[1]{\ensuremath{\text{qr}(#1)}}
+\newcommand{\Th}[1]{\ensuremath{\text{Th}(#1)}}
+\newcommand{\Loc}[1]{\ensuremath{\text{Loc}(#1)}}
+
+% expected value
+\newcommand{\expval}[2]{\E_{#1} \Big{[} #2 \Big{]}} % Zu math Operator umwandeln?
+
+% greek letters
+\renewcommand{\th}{\theta}
+\newcommand{\Gam}{\Gamma}
+\newcommand{\Sig}{\Sigma}
+\newcommand{\Del}{\Delta}
+
+% easier to write text in math
+\newcommand{\AL}{\ensuremath{\text{AL}}}
+\newcommand{\FO}{\ensuremath{\text{FO}}}
+
+% easier formatting
+\newcommand{\textcal}[1]{\cal{#1}}
+\renewcommand{\cal}[1]{\mathcal{#1}}
+\newcommand{\bb}[1]{\mathbb{#1}}
