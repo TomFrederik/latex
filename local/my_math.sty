@@ -45,19 +45,25 @@
 % math ops
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
-\DeclareMathOperator*{\E}{\mathbb{E}}
-\DeclareMathOperator*{\P}{\mathbb{P}}
-\newcommand{\set}[1]{\ensuremath{\{#1\}}}
+\DeclareMathOperator*{\E}{\mathbb{E}} % expected value
+\let\P\relax
+\DeclareMathOperator*{\P}{\mathbb{P}} % Probability
+\newcommand{\set}[1]{\ensuremath{\{#1\}}} % Set
+\newcommand{\iso}{\ensuremath{\cong}} % isomorphic
+\let\log\relax
+\newcommand{\log}[1]{\ensuremath{ \text{log}\left( #1 \right) }} %logarithm
+
+% Logik
 \newcommand{\Mod}[1]{\ensuremath{\text{Mod}(#1)}} % Modellklasse
 \newcommand{\Aut}[1]{\ensuremath{\text{Aut}(#1)}} % Automorphismusklasse
-\newcommand{\iso}{\ensuremath{\cong}} % isomorphic
 \newcommand{\qr}[1]{\ensuremath{\text{qr}(#1)}}
 \newcommand{\Th}[1]{\ensuremath{\text{Th}(#1)}}
 \newcommand{\Loc}[1]{\ensuremath{\text{Loc}(#1)}}
 
+
 % stats
-\newcommand{\expval}[2]{\E_{#1} \left[ #2 \right]} % expected value; Zu math Operator umwandeln?
-\newcommand{\prob}[2]{\P_{#1} \left[ #2 \right]} % probability; Zu math Operator umwandeln?
+\newcommand{\expval}[2]{\E_{#1} \left[ #2 \right] } % expected value; Zu math Operator umwandeln?
+\newcommand{\prob}[2]{\P_{#1} \left[ #2 \right] } % probability; Zu math Operator umwandeln?
 \newcommand{\indep}{\ensuremath{\perp\!\!\!\perp}} % conditional independence
 
 
