@@ -9,6 +9,7 @@
 \usepackage{microtype}
 \usepackage{stmaryrd}
 \usepackage{bm}
+\usepackage{bbm}
 
 % Abbildungen
 \usepackage{tikz}
@@ -37,7 +38,7 @@
 \newcommand{\eset}{\ensuremath{\varnothing}} % leere Menge
 
 % Meistens ist \varphi schöner als \phi, genauso bei \theta
-\renewcommand{\theta}{\vartheta}
+%\renewcommand{\theta}{\vartheta}
 
 % Aufzählungen anpassen (alternativ: \arabic, \alph)
 \renewcommand{\labelenumi}{(\roman{enumi})}
@@ -53,6 +54,8 @@
 %\let\log\relax
 \newcommand{\ind}[1]{\mathbbm{1}\left[ #1 \right]} % indicator function
 \renewcommand{\bf}{\mathbf}
+\newcommand{\parder}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}} % partial derivative
+\newcommand{\parderlong}[1]{\ensuremath{\frac{\partial}{\partial #1}}} % partial derivative for long expressions
 
 % Logik
 \newcommand{\Mod}[1]{\ensuremath{\text{Mod}(#1)}} % Modellklasse
